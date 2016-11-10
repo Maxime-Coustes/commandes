@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Testmovember creation</h1>
+{########################formmulaire###############################}
+    {{ form_start(form) }}
+    <form action="{{ path('testmovember_adresse') }}" method="post">
+
+
+        {{ form_widget(form.adresse,  {'attr': {'name':'adresse'}}) }}
+
+
+        <input type="submit" value="Create" />
+
+        {{ form_end(form) }}
+    </form>
+
+
+    <ul>
+        <li>
+            <a href="{{ path('testmovember_index') }}">Back to the list</a>
+        </li>
+    </ul>
+    {######################## fin formmulaire###############################}
+
+{% endblock %}

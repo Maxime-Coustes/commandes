@@ -1,0 +1,31 @@
+testMovemberBundle\Entity\testMovember:
+    type: entity
+    table: null
+    repositoryClass: testMovemberBundle\Repository\testMovemberRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        adresse:
+            type: string
+            length: 255
+            column: Adresse
+        lgt:
+            type: string
+            length: 255
+            column: lgt
+            nullable: TRUE
+        lat:
+            type: string
+            length: 255
+            column: lat
+            nullable: TRUE
+
+
+
+    lifecycleCallbacks: {  }
+
+

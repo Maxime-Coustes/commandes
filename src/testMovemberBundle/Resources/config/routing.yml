@@ -1,0 +1,7 @@
+test_movember_testmovember:
+    resource: "@testMovemberBundle/Resources/config/routing/testmovember.yml"
+    prefix:   /testmovember
+
+test_movember_homepage:
+    path:     /
+    defaults: { _controller: testMovemberBundle:Default:index }

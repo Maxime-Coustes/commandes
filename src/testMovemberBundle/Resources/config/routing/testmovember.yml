@@ -1,0 +1,29 @@
+testmovember_index:
+    path:     /
+    defaults: { _controller: "testMovemberBundle:testMovember:index" }
+    methods:  GET
+
+testmovember_show:
+    path:     /{id}/show
+    defaults: { _controller: "testMovemberBundle:testMovember:show" }
+    methods:  GET
+
+testmovember_new:
+    path:     /new
+    defaults: { _controller: "testMovemberBundle:testMovember:new" }
+    methods:  [GET, POST]
+
+testmovember_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "testMovemberBundle:testMovember:edit" }
+    methods:  [GET, POST]
+
+testmovember_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "testMovemberBundle:testMovember:delete" }
+    methods:  DELETE
+
+testmovember_adresse:
+    path:     /
+    defaults: { _controller: "testMovemberBundle:testMovember:getAdresse" }
+    methods:  [GET, POST]
